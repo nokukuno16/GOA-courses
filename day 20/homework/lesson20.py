@@ -1,7 +1,12 @@
-a = input("Enter: ")
-b = input("Enter: ")
-c = input("Enter: ")
-d = input("Enter: ")
-e = input("Enter: ")
+words_list = []
 
-print(a[0], b[0], c[0], d[0], e[0])
+for i in range(5):
+    word = input("Please enter word: ")
+    words_list.append(word)
+
+result = ""
+
+for word in words_list:
+    result += word[0]
+
+print(result)
