@@ -6,3 +6,4 @@ elif user_age >= 18 and user_age < 50:
     print("zrdasruli xar")
 else:
     print("moxuci xar")
+    

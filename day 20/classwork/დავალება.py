@@ -4,3 +4,4 @@ number_list.sort() # sort() ფუნქცია დაალაგებს �
 
 print(number_list[0] + number_list[1])
 
+

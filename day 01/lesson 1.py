@@ -14,5 +14,4 @@ is_ugly = False
 #print(type(height))
 #print(type(dont_knows_programming))
 
-
 print("me var " + name + surname + " da var " + str(age))
