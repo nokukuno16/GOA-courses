@@ -1,0 +1,33 @@
+div {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+
+    animation: firstanim 10s linear 0s infinite alternate-reverse;
+}
+
+@keyframes firstanim {
+    10% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: rgb(255, 179, 0);
+    }
+
+    40% {
+        background-color: rgb(246, 255, 0);
+    }
+
+    60% {
+        background-color: rgb(0, 255, 38);
+    }
+
+    80% {
+        background-color: rgb(25, 0, 255);
+    }
+
+    100% {
+        background-color: rgb(255, 0, 191);
+    }
+}

@@ -1,0 +1,31 @@
+.child{
+    /* ვრცელი გზა */
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    transition-duration: 2s;
+    transition-timing-function: easy;
+    transition-delay: 1;
+}
+
+.child:hover{
+    background-color:blue;
+    transform:rotate(300deg);
+
+
+}
+.child1{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    /* შემოკლებული გზა */
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+.child1:hover{
+    background-color:blue;
+    transform:rotate(300deg);
+
+}
+

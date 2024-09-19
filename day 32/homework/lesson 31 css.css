@@ -1,0 +1,11 @@
+.child{
+    border-radius: 15%;
+    background-color: aquamarine;
+    width: 200px;
+    height:200px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    font-size: 40px;
+    justify-content: center;
+}
