@@ -1,11 +1,37 @@
 .child{
     border-radius: 15%;
-    background-color: aquamarine;
+    background-image:url(https://static01.nyt.com/images/2018/06/17/travel/17hours1/merlin_138493119_dc17f17f-96a2-4487-a9ea-214914926374-superJumbo.jpg);
     width: 200px;
     height:200px;
     position: absolute;
-    top: 50px;
-    left: 500px;
-    font-size: 40px;
-    justify-content: center;
+    left:400px;
+    top:200px;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.child2{
+    border-radius: 15%;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUygyNI8QmQbSv_iJb1SE6j-Tsk-kmLVEIUw&s);
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left:650px;
+    top:200px;
+}
+
+
+
+.child3{
+    border-radius: 15%;
+    background-image:url(https://cdn.britannica.com/74/167874-050-994361EB/Sheikh-Zayed-Road-Dubai-United-Arab-Emirates.jpg);
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left:900px;
+    top:200px;
 }
