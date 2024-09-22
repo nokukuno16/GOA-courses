@@ -1,0 +1,38 @@
+.child{
+    border-radius: 15%;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRml0K8vzV8qzR1CnDiRl9d9-LMFhm4aR4Cdg&s);
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left:400px;
+    top:200px;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(139, 197, 255);
+}
+
+
+.child2{
+    border-radius: 15%;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUygyNI8QmQbSv_iJb1SE6j-Tsk-kmLVEIUw&s);
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left:650px;
+    top:200px;
+}
+
+
+
+.child3{
+    border-radius: 15%;
+    background-image:url(https://cdn.britannica.com/74/167874-050-994361EB/Sheikh-Zayed-Road-Dubai-United-Arab-Emirates.jpg);
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left:900px;
+    top:200px;
+}

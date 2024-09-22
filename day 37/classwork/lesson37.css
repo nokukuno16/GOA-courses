@@ -1,0 +1,18 @@
+.child{
+    background-color: black;
+    height:200px;
+    width:200px;
+    position: absolute;
+    top:200px ;
+    left:300px;
+
+}
+
+.child:hover{
+    transform: translate(50px,50px);
+}
+
+
+.child:active{
+    transform:translate(-50px, -50px);
+}
