@@ -1,0 +1,3 @@
+inline js aris javaskriptis konteiner tegebsi gamoyeneba
+internal js aris javaskripti romelsac body degis bolosi vewert scriptis tegebsi
+external js aris javaskripti romelis dasawerad vqmnit calke fails
