@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Page</title>
+    <style>
+        body {
+            font-size: 16px;
+            background-color: white;
+            color: black;
+        }
+        .large-text {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>რაღაცა</p>
+    </div>
+    <script>
+        let darkScreen = confirm("გსურთ თუ არა შავი ეკრანი?");
+        if (darkScreen) {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        let largeText = confirm("გსურთ თუ არა დიდი ტექსტი?");
+        if (largeText) {
+            document.body.classList.add("large-text");
+        }
+
+        let longText = confirm("გსურთ თუ არა გრძელი ტექსტი?");
+        if (longText) {
+            let content = document.getElementById("content");
+            let new_Text = "<p>ეს არის დამატებითი ტექსტი.</p>";
+            content.innerHTML += new_Text;
+        }
+    </script>
+</body>
+</html>
