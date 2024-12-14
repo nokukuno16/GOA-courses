@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .counter-container {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #counter {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+  
+  .buttons button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #decrement {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  #increment {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #reset {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .buttons button:hover {
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,19 @@
+#cookie {
+    height:420px;
+    width:420px;
+    position:absolute;
+    left:560px;
+    top:100px;
+    
+}
+
+#demo {
+    font-size: 50px;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 500px;
+}
+
+body {
+    background-color: rgba(255, 227, 136, 0.882);
+}

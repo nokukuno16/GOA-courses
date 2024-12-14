@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index_2.css">
+</head>
+<body>
+    <div>
+        <img src="https://png.pngtree.com/png-vector/20240310/ourmid/pngtree-cute-chocolate-chip-cookie-in-pixel-art-png-image_11926992.png" alt="cookie" id="cookie" onclick="counter()">
+        <p id="demo">0</p>
+    </div>
+    <script>
+        let count = 0;
+        function counter() {
+            let p = 1;
+            count += p;
+            document.getElementById("demo").innerHTML = count;
+        }
+
+    </script>
+</body>
+</html>
