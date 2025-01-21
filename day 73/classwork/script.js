@@ -1,4 +1,4 @@
-const computer = {
+const car = {
     model: "Tesla Model S",
     color: "White",
     height: 1.45,
