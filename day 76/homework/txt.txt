@@ -1,0 +1,11 @@
+def sum_digits(n):
+    result = 0
+    n = abs(n)  # უარყოფითი რიცხვების მხარდასაჭერად
+    while n > 0:
+        result += n % 10
+        n //= 10  # აქ უნდა მოხდეს n-ის განახლება
+    return result
+
+print(sum_digits(123))  # 6 (1 + 2 + 3)
+print(sum_digits(405))  # 9 (4 + 0 + 5)
+print(sum_digits(-987))  # 24 (9 + 8 + 7)

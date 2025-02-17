@@ -1,0 +1,16 @@
+def sum_two_largest(lst):
+    if len(lst) < 2:
+        return None  # თუ სიაში 2-ზე ნაკლები ელემენტია, ვერ ვიპოვით ორს
+
+    max1 = max(lst)  # ვპოულობთ უდიდეს რიცხვს
+    lst.remove(max1)  # ვშლით მას, რომ ვიპოვოთ შემდეგი უდიდესი განსხვავებული ელემენტი
+    max2 = max(lst)  # ვპოულობთ მეორე უდიდესს
+
+    return max1 + max2  # ვაბრუნებთ მათ ჯამს
+
+# ტესტები
+print(sum_two_largest([3, 7, 2, 9, 5]))  # 16 (9 + 7)
+print(sum_two_largest([10, 10, 5, 3]))   # 20 (10 + 10)
+print(sum_two_largest([1, 1, 1]))        # 2 (1 + 1)
+print(sum_two_largest([8]))              # None (სიაში 2-ზე ნაკლები ელემენტია)
+print(sum_two_largest([-5, -1, -7, -3])) # -4 (-1 + -3)
