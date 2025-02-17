@@ -1,0 +1,18 @@
+const fruits = ["apple", "banana", "cherry"];
+fruits.unshift("orange", "peach");
+console.log(fruits);
+fruits.shift();
+console.log(fruits);
+fruits.splice(1, 0, "lemon", "kiwi");
+console.log(fruits);
+const fruits2 = fruits.slice(1, 4);
+console.log(fruits2);
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(text2);
+fruits.sort();
+console.log(fruits);
+const reversedFruits = fruits.reverse();
+console.log(reversedFruits);
+let text = fruits.join();
+console.log(text);
