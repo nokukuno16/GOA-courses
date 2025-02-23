@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            border-radius: 20px;
+            padding: 10px 30px;
+            font-size: 16px;
+            font-style:oblique;
+        }
+        button {
+            border-radius: 20px;
+            padding: 10px 30px;
+            font-size: 16px;
+            margin: 5px;
+            font-style:oblique;
+        }
+        #display {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Timer</h1>
+    <input type="number" id="timeInput" placeholder="Enter time (0-10000)"><br>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <div id="display"></div>
+    
+    <script>
+        let timer;
+        let count = 1;
+        let limit = 0;
+        let running = false;
+        
+        function startTimer() {
+            limit = document.getElementById('timeInput').value * 1;
+            if (!(limit >= 0 && limit <= 10000)) {
+                alert("Please enter a number between 0 and 10000");
+                return;
+            }
+            document.getElementById('display').innerHTML = '';
+            count = 1;
+            running = true;
+            updateCount();
+        }
+
+        function updateCount() {
+            if (!running) return;
+            if (count > limit) {
+                document.getElementById('display').innerHTML = "<strong>Time's up</strong>";
+                running = false;
+                return;
+            }
+            document.getElementById('display').textContent = count;
+            count++;
+            setTimeout(updateCount, 1000);
+        }
+
+        function stopTimer() {
+            running = false;
+        }
+    </script>
+</body>
+</html>
