@@ -1,0 +1,54 @@
+#showTime {
+    font-size: 100px;  
+    position: absolute;
+    left: 550px;
+    color: white;
+    z-index: 2;
+}
+
+body {
+    background-color: rgb(13, 13, 13);
+}
+
+.background_1 {
+    height:130px;
+    width:110px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 20px;
+    position: absolute;
+    top:65px;
+    left:545px;
+    z-index: 1;
+}
+
+.background_2 {
+    height:130px;
+    width:110px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 20px;
+    position: absolute;
+    top:65px;
+    left:680px;
+    z-index: 1;
+}
+
+.background_3 {
+    height:130px;
+    width:110px;
+    background-color:rgb(35, 35, 35);
+    border-radius: 20px;
+    position: absolute;
+    top:65px;
+    left:810px;
+    z-index: 1;
+}
+
+.line {
+    height: 3px;
+    width: 360px;
+    background-color: rgb(35, 35, 35);
+    position: absolute;
+    top: 136px;
+    left: 555px;
+    z-index: 2;
+}
