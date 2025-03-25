@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .classElement {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Hello, World!</h1>
+    <p class="classElement">This is a paragraph with a class.</p>
+    <p class="classElement">Another paragraph with the same class.</p>
+    <div>First div element.</div>
+    <div>Second div element.</div>
+    <button onclick="changeContent()">Change Content</button>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        // getElementById
+        let header = document.getElementById("header");
+        console.log("Header text:", header.innerHTML);
+
+        // getElementsByClassName
+        let classElements = document.getElementsByClassName("classElement");
+        console.log("Class elements:", classElements);
+        
+        // getElementsByTagName
+        let divElements = document.getElementsByTagName("div");
+        console.log("Div elements:", divElements);
+
+        // innerHTML to change content
+        function changeContent() {
+            header.innerHTML = "Hello, JavaScript!";
+            classElements[0].innerHTML = "Modified paragraph!";
+        }
+
+        // style to change appearance
+        function changeStyle() {
+            header.style.color = "red";
+            classElements[0].style.fontSize = "20px";
+        }
+    </script>
+</body>
+</html>

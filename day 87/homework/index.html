@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Switcher</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img id="logo" src="react.png" alt="Logo" width="150" height="150">
+        <div>
+            <button onclick="changeLogo('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLPLQGezkpT1ntM2T0k3TR0yY75wevMpjLKA&s')">React</button>
+            <button onclick="changeLogo('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRss-86vRuxOArrVRmMgerLZ5pi8yCs6U7zsQ&s')">Javascript</button>
+            <button onclick="changeLogo('https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png')">Html</button>
+            <button onclick="changeLogo('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sH2KALHd1Zrs1zwelX6ORC40Uq4K-dBF0A&s')">Css</button>
+        </div>
+        <div>
+            <button onclick="handleRepeat()">Repeat Input</button>
+            <button onclick="calculateSum()">Calculate Sum</button>
+        </div>
+    </div>
+
+    <script>
+        function changeLogo(image) {
+            document.getElementById("logo").src = image;
+        }
+
+        function handleRepeat() {
+            let input = prompt("Enter text:");
+            let times = parseInt(prompt("Enter repeat count:"), 10);
+            if (!isNaN(times)) {
+                console.log(input.repeat(times));
+            }
+        }
+
+        function calculateSum() {
+            let numbers = [10, 20, 30, 40, 50];
+            let sum = 0;
+            numbers.forEach(num => sum += num);
+            console.log("Sum:", sum);
+        }
+    </script>
+</body>
+</html>
