@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კატა და ძაღლი</title>
+</head>
+<body>
+
+    <h2>აირჩიეთ სურათი:</h2>
+    <button onclick="showCat()">კატა</button>
+    <button onclick="showDog()">ძაღლი</button>
+    
+    <br><br>
+    <img id="animalImage" src="" alt="აირჩიეთ ცხოველი">
+
+    <script>
+        function showCat() {
+            document.getElementById("animalImage").src = "https://placekitten.com/300/300";
+        }
+
+        function showDog() {
+            document.getElementById("animalImage").src = "https://placedog.net/300/300";
+        }
+    </script>
+
+</body>
+</html>
