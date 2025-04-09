@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Divs</title>
+    <style>
+        .dynamic-div {
+            background-color: lightblue;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" style="text-align: center;"></div>
+
+    <script>
+        let container = document.getElementById("container");
+        let size = 15;
+        let prepend = true;
+
+        for (let i = 1; i <= 10; i++) {
+            let newDiv = document.createElement("div");
+            newDiv.className = "dynamic-div";
+            newDiv.style.width = size + "px";
+            newDiv.style.height = size + "px";
+            newDiv.innerText = "Div " + i;
+            
+            if (prepend) {
+                container.prepend(newDiv);
+            } else {
+                container.appendChild(newDiv);
+            }
+            prepend = !prepend;
+            size *= 2;
+        }
+    </script>
+</body>
+</html>
