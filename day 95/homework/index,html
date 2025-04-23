@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დამატება ღილაკით</title>
+  <style>
+    .new-box {
+      width: 150px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid navy;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="addBtn">დამატება</button>
+
+  <script>
+    const button = document.getElementById("addBtn");
+
+    button.addEventListener("click", function() {
+      const newDiv = document.createElement("div");
+      newDiv.classList.add("new-box");
+      newDiv.textContent = "ახალი ელემენტი";
+      document.body.appendChild(newDiv);
+    });
+  </script>
+
+</body>
+</html>

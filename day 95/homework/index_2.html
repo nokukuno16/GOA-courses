@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>კვადრატი -> წრე -> კვადრატი</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 150px;
+      background-color: tomato;
+      transition: border-radius 1s ease;
+      border-radius: 0%;
+      margin: 100px auto;
+      cursor: pointer;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box"></div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    box.addEventListener("click", () => {
+      box.classList.add("circle");
+      setTimeout(() => {
+        box.classList.remove("circle");
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>

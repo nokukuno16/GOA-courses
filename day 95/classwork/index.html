@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დივი გაქრობა/გაჩენა</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: royalblue;
+      margin: 100px auto;
+      transition: opacity 1s ease;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box"></div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    function handleClick() {
+      // ივენთის მოხსნა
+      box.removeEventListener("click", handleClick);
+
+      // 1 წამში გაქრობა
+      box.style.opacity = "0";
+
+      // 2 წამში დაბრუნება
+      setTimeout(() => {
+        box.style.opacity = "1";
+
+        // ანიმაციის დასრულების შემდეგ, ივენთის ხელახლა დამატება
+        setTimeout(() => {
+          box.addEventListener("click", handleClick);
+        }, 1000);
+      }, 2000);
+    }
+
+    box.addEventListener("click", handleClick);
+  </script>
+
+</body>
+</html>

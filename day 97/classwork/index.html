@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Count</title>
+</head>
+<body>
+
+    <input type="text" id="inputField" placeholder="Type something...">
+    <p id="output">Changes: 0 Added, 0 Removed</p>
+
+    <script>
+        let inputField = document.getElementById("inputField");
+        let output = document.getElementById("output");
+
+        let prevValue = ""; 
+        let addedCount = 0;  
+        let removedCount = 0;
+
+        inputField.addEventListener("input", function() {
+            let currentValue = inputField.value;
+
+            for (let i = 0; i < Math.min(prevValue.length, currentValue.length); i++) {
+                if (prevValue[i] !== currentValue[i]) {
+                    if (prevValue.length > currentValue.length) {
+                        removedCount++;
+                    } else {
+                        addedCount++;
+                    }
+                }
+            }
+
+            addedCount += currentValue.length - prevValue.length;
+            removedCount += prevValue.length - currentValue.length;
+
+            prevValue = currentValue; 
+
+            output.textContent = `Changes: ${addedCount} Added, ${removedCount} Removed`;
+        });
+    </script>
+
+</body>
+</html>
